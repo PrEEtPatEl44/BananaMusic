@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a New Artist</title>
+  <link rel="stylesheet" href="./css/banana.css" />
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <form action="https://httpbin.org/post" method="post" id="artistRequestForm">
+  <h2>Request a New Artist</h2>
+    <label for="artistName">Artist's Name:</label>
+    <input type="text" id="artistName" name="artistName" required>
+    <br>
+    <label for="musicGenre">Music Genre:</label>
+    <input list="genres" id="musicGenre" name="musicGenre" required>
+    <datalist id="genres">
+      <option value="Pop">
+      <option value="Rock">
+      
+    </datalist>
+    <br>
+    <label for="socialMedia">Social Media URLs:</label>
+    <input type="url" id="socialMedia" name="socialMedia" placeholder="Enter URL" required>
+    <br>
+    <label for="songVideos">Song/Video URLs:</label>
+    <div id="urlContainer">
+      <input type="url" name="songVideos" placeholder="Enter URL" required>
+    </div>
+    
+    <button type="button" id="addUrl">Add</button>
+    <br>
+    <label for="explicitLyrics">Explicit Lyrics:</label>
+    <input type="checkbox" id="explicitLyrics" name="explicitLyrics">
+    <br>
+    <label for="artistDescription">Why should this artist be added?</label>
+    <textarea id="artistDescription" name="artistDescription" rows="4" required></textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    document.getElementById('addUrl').addEventListener('click', function () {
+      var container = document.getElementById('urlContainer');
+      var input = document.createElement('input');
+      input.type = 'url';
+      input.name = 'songVideos';
+      input.placeholder = 'Enter URL';
+      container.appendChild(input);
+    });
+  </script>
+
+</body>
+</html>

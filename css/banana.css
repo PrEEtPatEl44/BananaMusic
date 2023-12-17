@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background-color: #191414;
+  color: bisque;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 10px;
+}
+
+header p {
+  box-shadow: 0px 0px 10px rgba(205, 199, 13, 0.6);
+}
+
+header h1,
+header p,
+.text h1,
+.text p {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  margin: 10px 30px;
+  justify-content: space-around;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main h2 {
+  padding: 50px 10px;
+}
+
+#selected-artist img {
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease; 
+}
+
+#selected-artist img:hover {
+  height: 70px;
+  width: 70px;
+
+}
+
+#selected-artist h2 {
+  padding-right: 20px;
+}
+
+button {
+  height: 50px;
+  width: 150px;
+  background-color: #ffaa00;
+  color: black;
+  margin: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(205, 199, 13, 0.6);
+}
+
+button:hover {
+  height: 55px;
+  width: 155px;
+  filter: brightness(90%);
+  background-color: bisque;
+  transition: ease(1.2s);
+}
+
+.All-Cards img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.All-Cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 25px;
+  row-gap: 50px;
+}
+
+.card {
+  background-color: #d58f04;
+  color: black;
+  width: 200px;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px rgba(205, 199, 13, 0.6);
+}
+
+.card:hover {
+  background-color: bisque;
+  transition: ease(1.2s);
+}
+
+.text {
+  font-family: Poppins;
+  color: #333333;
+}
+.text h1 {
+  font-weight: bolder;
+}
+.text p {
+  font-weight: bold;
+}
+.text time {
+  font-weight: 100;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: xx-large;
+}
+#email{
+  width:200px;
+  height:30px;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
