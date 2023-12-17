@@ -8,5 +8,5 @@ streaming apps like Spotify or Apple Music. Please note that Banana Music
 does not play actual music; it was designed to help students get familiar 
 with the basics of web development using HTML, CSS, and JavaScript.
 
-hosted at: 
+hosted at: https://preetpatel44.github.io/BananaMusic/
 
